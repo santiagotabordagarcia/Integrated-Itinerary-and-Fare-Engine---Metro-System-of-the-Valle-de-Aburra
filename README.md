@@ -30,16 +30,16 @@ Run the prograsm:
 ./practice
 ```
 
-## Defence Questions
+## Preguntas de defensa
 
-### 1. Why must the base class desctructor be virtual?
+### 1. ¿Por qué el destructor de la clase base debe ser virtual?
 
-If the destructor of TransportMode is not virtual, deleting a derived object through a base-class pointer can cause undefined behavior. The derived class destructor may not be called correctly
+Si el destructor de "TransportMode" no es virtual, eliminar un objeto de una clase derivada mediante un puntero de la clase base puede provocar un comportamiento indefinido. El destructor de la clase derivada podría no ejecutarse correctamente.
 
-Declaring the destructor as virtual ensures that the correct destructor is called when using polymorphism. This is important because the Network class stores transport modes using std::unique_ptr<TransportMode>.
+Declarar el destructor como virtual garantiza que se llame al destructor correcto cuando se utiliza el polimorfismo. Esto es importante porque la clase "Network", almacena los modos de transporte utilizando "std::unique_ptr<TransportMode>".
 
-### 2. Why is an abstract class with pure virtual functions preferable to an enumeration and a switch statement?
+### 2. ¿Por qué es preferible una clase abstracta con funciones virtuales puras en lugar de una enumeración y una estructura switch?
 
-An abstract class allows each transport mode to implements its own behavior through virtual functions. This makes the code more flexible and supports polymorphism.
+Una clase abstracta permite que cada modo de transporte implemente su propio comportamiento mediante funciones virtuales. Esto hace que el código sea más flexible y permite utilizar el polimorfismo.
 
-With an enumeation and a switch statement, adding a new transport mode would require modifying the conditional logic in several places. With polymorphism, new modes can implement their own behavior without changing the existing code that uses the base class.
+Con una enumeración y una estructura "switch", agregar un nuevo modo de transporte requeriría modificar la lógica condicional en varios lugares. En cambio, con el polimorfismo, los nuevos modos pueden implementar su propio comportamiento sin necesidad de modificar el código existente que utiliza la clase base.
