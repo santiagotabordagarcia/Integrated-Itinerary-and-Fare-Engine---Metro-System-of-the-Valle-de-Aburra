@@ -16,7 +16,7 @@ Modela diversos modos de transporte y permiles de pasajeros, calcula tarifas, ap
 - C++17 compiler
 - g++
 
-## How to Compile and Run
+## Cómo compilar y ejecutar
 
 Compila el programa usando:
 
