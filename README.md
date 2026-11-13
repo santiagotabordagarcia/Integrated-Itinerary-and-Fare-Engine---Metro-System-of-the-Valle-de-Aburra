@@ -1,30 +1,30 @@
 # Integrated-Itinerary-and-Fare-Engine---Metro-System-of-the-Valle-de-Aburra
 
-## Team Mmbers
+## Miembros del equipo:
 
 - Sebastian Ramirez Muñoz
 - Santiago Taborda Garcia
 
-## Project Description
+## Descripción del proyecto
 
-This project implements an integrated itinerary and fare engine for the Metri System of the Valle de Aburra using C++17
+Este proyecto implementa un motor integrado de itinerarios y tarifas para el sistema Metro del Valle de Aburrá, utilizando C++17.
 
-It models different transport modes and passenger profiles, calculates fares, applies the integration rules, and generates reports using STL algorithms
+Modela diversos modos de transporte y permiles de pasajeros, calcula tarifas, aplica las relgas de integracion y genera informes mediante el uso de algoritmos de la STL.
 
-## Requirements
+## Requerimientos
 
 - C++17 compiler
 - g++
 
 ## How to Compile and Run
 
-Compile the program using:
+Compila el programa usando:
 
 ```bash
 g++ -std=c++17 -Wall -Wextra -o practice main.cpp
 ```
 
-Run the prograsm:
+Ejecuta el programa:
 
 ```bash
 ./practice
